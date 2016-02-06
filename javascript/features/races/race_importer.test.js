@@ -101,7 +101,7 @@ describe('RaceImporter', it => {
       ]
     });
 
-    assert.equal(race.checkpoints.length, 2);
+    assert.equal(race.checkpoints.length, 42);
   });
 
   it('should validate the number of laps', assert => {

@@ -43,7 +43,7 @@ class ReportHandler {
         new suspectedPlayer[MAX_PLAYER_NAME+1], message[128], parameterOffset = 0;
         Command->stringParameter(params, 0, suspectedPlayer, sizeof(suspectedPlayer));
         parameterOffset = min(strlen(params), Command->startingIndexForParameter(params, 0)
-            + strlen(suspectedPlayer) + 1);
+            + strlen(suspectedPlayer) + 1)
 
         format(message, sizeof(message), "* Report by %s (Id:%d): Suspected player: %s - Cheat/reason: %s",
             Player(playerId)->nicknameString(), playerId, suspectedPlayer, params[parameterOffset]);
