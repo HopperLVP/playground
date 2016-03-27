@@ -40,8 +40,16 @@ lvp_Ignore( playerid, params[] )
     {
         SendClientMessage( playerid, COLOR_RED, "You cannot ignore yourself, silly!" );
         return 1;
-    }
-
+    } 
+    
+     if (ignore[playerid][giveplayerid] == 0)
+                      {
+                          ignore[playerid][giveplayerid] = 1;
+         format(string, 128, "You ignored %s. You won't see any PM's of him anymore.", playername);
+                            SendClientMessage(playerid, 0xFF0000AA, string);
+                        }
+                        else if(ignore[playerid][giveplayerid] >= 1)
+                        
     // Now just toggle our magical and powerfull switch.
     g_Ignore[ playerid ][ ignoreID ] = true;
 
