@@ -14,7 +14,7 @@
 static  iMoneyBagCashPickup = -1;
 static  iMoneyBagCash;
 static  Text:moneyText = Text:INVALID_TEXT_DRAW;
-static  szMoneyClue[128];
+static  szMoneyClue[123];
 static  iCashAddTime[MAX_PLAYERS];
 
 enum E_RAND_MONEY_BAG {
@@ -52,7 +52,6 @@ static RandPickupLoc[RANDOM_MONEY_LOCATIONS][E_RAND_MONEY_BAG] = {
 	{1211.9374,-35.5115,1000.9531,"Hey, sexy lady"}, // LV stripclub
 	{1461.2927,2787.3984,10.8203,"GB"}, // Gangbase
 	{1382.6139,2184.4070,11.0234,"Homerun!"}, // homebase of the LV baseball statium
-	{2144.2246,1639.8315,993.5761,"Oceans 11"}, // Caligulas vault
 	{-1661.3188,1214.7531,21.1563,"OTTO's broken glass"}, // Car shop north SF
 	{-8.2241,-10.1926,68.5060,"Keep climbing"}, // On the haystack
 	{711.5510,1986.4100,3.4000,"Twenties in her panties!"}, // Behind the strip club, located near a gas station behind the abandoned airport
@@ -64,7 +63,9 @@ static RandPickupLoc[RANDOM_MONEY_LOCATIONS][E_RAND_MONEY_BAG] = {
 	{-824.9183,532.8306,1357.0803,"Liberty City"}, // Liberty City
 	{-1600.9792,-2666.6938,59.6395,"Fire extinguisher"}, // Whetstone, near Mt. Chilliad, where there's a gas station and a fire extinguisher pickup
 	{-1621.3473,1405.9089,7.1824,"T-Bone Mendez died here"}, // Where you killed T-Bone (SF)
-	{-2667.6270,1428.5239,906.4609,"eF.Jizzy?"}, // Inside Jizzy's club
+	
+	
+	
 	{-2145.4858,-253.9723,40.7195,"Jhon's coke factory"}, // Coke factory in SF
 	{-2427.9800,-125.3447,35.3203,"Pastageddon"}, // Shop in SF
 	{-856.1527,1525.7755,25.7377,"Kase without the pasta touch"}, // The smokin' beef Grill (cow on top)
@@ -75,7 +76,6 @@ static RandPickupLoc[RANDOM_MONEY_LOCATIONS][E_RAND_MONEY_BAG] = {
 	{2578.5872,2382.0640,18.2813,"Guitar pool"}, // Pool at Vrock hotel
 	{2065.4370,2154.3938,10.8203,"Dangerous motel"}, // Fight club motel
 	{2022.7126,1007.4236,14.9789,"4 mythical creatures"}, // 4 dragons casino
-	{288.0256,-59.3220,1001.5156,"Test your metal here!"}, // LV ammunation
 	{2357.4731,1844.9216,55.9280,"Ronald McDonald's roof"}, // Roof of the first clown pocket
 	{-2035.5417,-116.8417,1035.1719,"Learn to Drive"}, // SF Driving School
 	{-2156.4529,-405.7347,38.7588,"Touchdown!"}, // SF Stadium
@@ -98,11 +98,9 @@ static RandPickupLoc[RANDOM_MONEY_LOCATIONS][E_RAND_MONEY_BAG] = {
 	{220.1056,1822.8801,7.5257,"Map of San Andreas"}, // Map in area 51
 	{2.3492,1363.7041,9.1719,"Solar trailer park"}, // Trailer park near the ufo (has 3 solar panels)
 	{-143.9738,1230.2303,33.3366,"King ring"}, // King ring donuts in Fort Carson
-	{2496.2051,-1710.8314,1014.7422,"... street, home"}, // CJ's house
 	{1544.6656,-1353.5833,329.4738,"A nine-pointed star"}, // Basejumping building
 	{2695.7883,-1704.5995,11.8438,"Eight-track racing"}, // LR Stadium
 	{810.9623,-1098.1578,25.9063,"Soon to be burried money"}, // Open gravetomb in LS cemetary (inside the house)
-	{2051.7954,-1694.6245,13.5547,"Smokey garage"}, // Big Smoke's garage
 	{657.1237,-1866.7823,5.4609,"Beach workout"}, // Beach gym in LS
 	{154.4798,-1951.7048,51.3438,"Lighthouse"}, // LS lighthouse
 	{1804.2454,-2124.3630,13.9424,"Mr. Vialpando"}, // Cesar Vialpando's house
@@ -164,6 +162,9 @@ static RandPickupLoc[RANDOM_MONEY_LOCATIONS][E_RAND_MONEY_BAG] = {
     {1383.719604, 2184.903564, 11.023437, "My Babe's name is Ruth"},
     {1608.248535, 2778.006591, 12.531224, "Pandora's Box"}
 	};
+	
+	
+	
 
 BagCash__Disconnect(playerid) {
     g_bagOfCashTextDrawVisible[playerid] = false;
