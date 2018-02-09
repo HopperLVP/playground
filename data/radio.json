@@ -20,9 +20,9 @@
         "stream": "http://46.105.118.14:25500/listen.pls"
     },
     {
-        "name": "Oui FM",
+        "name": "Generations Rap FR",
         "language": "French",
-        "stream": "http://stream.ouifm.fr/ouifm-high.mp3"
+        "stream": "http://generationfm-rap.ice.infomaniak.ch/generationfm-rap-high.mp3"
     },
     {
         "name": "Planet Rock",
