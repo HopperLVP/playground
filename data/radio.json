@@ -33,5 +33,11 @@
         "name": "Radio 538",
         "language": "Dutch",
         "stream": "http://18973.live.streamtheworld.com/RADIO538.mp3"
-    }
-]
+    },
+    {
+        "name": "Chillsky Lo-Fi"
+        "lanhuage": "English"
+        "strean": " https://hyades.shoutca.st/tunein/lfhh.pls"
+    },
+    
+]    
